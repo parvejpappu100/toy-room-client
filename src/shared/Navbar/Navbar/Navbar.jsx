@@ -30,9 +30,9 @@ const Navbar = () => {
                   </li>
                 </ul>
               </div>
-              <a className="">
+              <Link to="/" className="">
                 <img className="w-2/4" src="https://i.ibb.co/d6jRFLd/logo-2.png" alt="" />
-              </a>
+              </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
               <ul className="menu menu-horizontal px-1 font-semibold">
