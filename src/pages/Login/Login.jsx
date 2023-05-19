@@ -8,17 +8,36 @@ import { AuthContext } from '../../providers/AuthProvider';
 
 const Login = () => {
 
-    const {googleSingIn , setUser} =useContext(AuthContext);
+    const { googleSingIn, setUser , singIn } = useContext(AuthContext);
 
     const handleGoogleSingIn = () => {
         googleSingIn()
-        .then(result => {
-            const user = result.user;
-            setUser(user)
-        })
-        .catch(error => {
+            .then(result => {
+                const user = result.user;
+                setUser(user)
+            })
+            .catch(error => {
 
-        })
+            })
+    }
+
+    const handleLogIn = event => {
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+
+        singIn(email, password)
+            .then(result => {
+                const user = result.user;
+                event.target.reset();
+                setUser(user) 
+            })
+            .catch(error => {
+                console.log(error.message)
+            })
+
+        console.log()
     }
 
     return (
@@ -28,7 +47,7 @@ const Login = () => {
             </div>
             <div className='w-full md:w-2/4 lg:w-2/5 py-10 border md:mr-2'>
                 <h3 className='text-center text-3xl font-semibold'>Login</h3>
-                <form className='w-4/5 lg:w-2/3 mx-auto'>
+                <form onSubmit={handleLogIn} className='w-4/5 lg:w-2/3 mx-auto'>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text text-xl font-medium">Email</span>

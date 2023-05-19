@@ -1,13 +1,49 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Lottie from "lottie-react";
 import animation from "../../assets/115794-e-commerce-page-sign-up.json"
+import { AuthContext } from '../../providers/AuthProvider';
+import { updateProfile } from 'firebase/auth';
 
 
 const SingUp = () => {
 
-    
+    const { createUser, setUser } = useContext(AuthContext);
 
+    const handleSingUp = event => {
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        const name = form.name.value;
+        const photo = form.photo.value;
+        console.log(email, password, name, photo)
+
+        createUser(email, password)
+            .then(result => {
+                const user = result.user;
+                setUser(user);
+                updateUserData(user , name , photo)
+            })
+            .catch(error => {
+                console.log(error.message)
+            })
+
+
+    }
+
+    const updateUserData = (user, name, photoUrl) => {
+        updateProfile(user, {
+            displayName: name,
+            photoURL: photoUrl
+        })
+            .then(() => {
+
+            })
+            .catch(error => {
+
+            })
+    }
 
     return (
         <div className='lg:container mx-auto flex flex-col md:flex-row items-center justify-center gap-5 my-20'>
@@ -16,7 +52,7 @@ const SingUp = () => {
             </div>
             <div className='w-full md:w-2/4 lg:w-2/5 py-10 border md:mr-2'>
                 <h3 className='text-center text-3xl font-semibold'>Login</h3>
-                <form className='w-4/5 lg:w-2/3 mx-auto'>
+                <form onSubmit={handleSingUp} className='w-4/5 lg:w-2/3 mx-auto'>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text text-xl font-medium">Name</span>
