@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaGithub, FaGoogle } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import Lottie from "lottie-react";
 import animation from "../../assets/131930-progerss.json"
+import { AuthContext } from '../../providers/AuthProvider';
 
 
 const Login = () => {
+
+    const {googleSingIn , setUser} =useContext(AuthContext);
+
+    const handleGoogleSingIn = () => {
+        googleSingIn()
+        .then(result => {
+            const user = result.user;
+            setUser(user)
+        })
+        .catch(error => {
+
+        })
+    }
+
     return (
         <div className='lg:container mx-auto flex flex-col md:flex-row items-center justify-center gap-5 my-20'>
             <div className='md:w-2/4 w-full flex items-center justify-center'>
@@ -35,7 +50,7 @@ const Login = () => {
                     <h6 className='text-center my-3 font-semibold'>Or sing with</h6>
                     <div className='flex gap-10 items-center justify-center my-5'>
                         <button className='rounded-full bg-[#F5F5F8] p-4 text-[#3B5998]'><FaGithub></FaGithub></button>
-                        <button className='rounded-full bg-[#F5F5F8] p-4 text-[#3B5998]'><FaGoogle></FaGoogle></button>
+                        <button onClick={handleGoogleSingIn} className='rounded-full bg-[#F5F5F8] p-4 text-[#3B5998]'><FaGoogle></FaGoogle></button>
                     </div>
                     <p className='text-center'>New to this website ? <Link to="/singUp" className='hover:underline font-semibold'>Sing up</Link></p>
                 </div>

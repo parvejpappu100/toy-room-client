@@ -6,7 +6,6 @@ import ShowCar from '../ShowCar/ShowCar';
 const ShopCategory = () => {
 
     const [category , setCategory] = useState([]);
-    console.log(category)
     useEffect( () => {
         fetch("toy.json")
         .then(res => res.json())

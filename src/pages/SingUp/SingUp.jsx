@@ -5,6 +5,10 @@ import animation from "../../assets/115794-e-commerce-page-sign-up.json"
 
 
 const SingUp = () => {
+
+    
+
+
     return (
         <div className='lg:container mx-auto flex flex-col md:flex-row items-center justify-center gap-5 my-20'>
             <div className='md:w-2/4 w-full flex items-center justify-center'>
