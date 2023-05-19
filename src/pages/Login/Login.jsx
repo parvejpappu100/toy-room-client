@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { FaGithub, FaGoogle } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import Lottie from "lottie-react";
@@ -8,13 +8,16 @@ import { AuthContext } from '../../providers/AuthProvider';
 
 const Login = () => {
 
-    const { googleSingIn, setUser , singIn } = useContext(AuthContext);
+    const { googleSingIn, setUser, singIn } = useContext(AuthContext);
+
+    const [loginError, setLoginError] = useState('');
+    const [success, setSuccess] = useState('');
 
     const handleGoogleSingIn = () => {
         googleSingIn()
             .then(result => {
                 const user = result.user;
-                setUser(user)
+                setUser(user);
             })
             .catch(error => {
 
@@ -31,10 +34,13 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 event.target.reset();
-                setUser(user) 
+                setUser(user);
+                setSuccess("Login successfully")
+                setLoginError('');
             })
             .catch(error => {
-                console.log(error.message)
+                setLoginError(error.message)
+                setSuccess("")
             })
 
         console.log()
@@ -63,8 +69,11 @@ const Login = () => {
                             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                         </label>
                     </div>
+                    <p className="text-green-500">{success}</p>
+                    <p className="text-red-500">{loginError}</p>
                     <input type="submit" value="Login" className='w-full font-bold btn border-0  hover:bg-[#FFFFFF] hover:text-black hover:border-2  hover:border-black  bg-black text-white py-3 my-5 rounded-md' />
                 </form>
+
                 <div className='w-2/3 mx-auto'>
                     <h6 className='text-center my-3 font-semibold'>Or sing with</h6>
                     <div className='flex gap-10 items-center justify-center my-5'>

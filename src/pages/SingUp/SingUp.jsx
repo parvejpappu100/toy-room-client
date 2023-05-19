@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Lottie from "lottie-react";
 import animation from "../../assets/115794-e-commerce-page-sign-up.json"
@@ -10,6 +10,9 @@ const SingUp = () => {
 
     const { createUser, setUser } = useContext(AuthContext);
 
+    const [registerError, setRegisterError] = useState('');
+    const [success, setSuccess] = useState('');
+
     const handleSingUp = event => {
         event.preventDefault();
         const form = event.target;
@@ -17,16 +20,33 @@ const SingUp = () => {
         const password = form.password.value;
         const name = form.name.value;
         const photo = form.photo.value;
-        console.log(email, password, name, photo)
+
+        // * validate:
+        if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
+            setRegisterError("Please add at least two upper case letter.")
+            return;
+        }
+        else if (!/(?=.*[@$!%*?&])/.test(password)) {
+            setRegisterError('Password should be at least one special character')
+            return;
+        }
+        else if (password.length < 6) {
+            setRegisterError('Please add at least 6 character in you password')
+            return;
+        }
 
         createUser(email, password)
             .then(result => {
                 const user = result.user;
                 setUser(user);
-                updateUserData(user , name , photo)
+                setSuccess("User has create successfully")
+                setRegisterError('');
+                event.target.reset();
+                updateUserData(user, name, photo)
             })
             .catch(error => {
-                console.log(error.message)
+                setRegisterError(error.message)
+                setSuccess('');
             })
 
 
@@ -51,7 +71,7 @@ const SingUp = () => {
                 <Lottie animationData={animation} loop={true}></Lottie>
             </div>
             <div className='w-full md:w-2/4 lg:w-2/5 py-10 border md:mr-2'>
-                <h3 className='text-center text-3xl font-semibold'>Login</h3>
+                <h3 className='text-center text-3xl font-semibold'>Sing Up</h3>
                 <form onSubmit={handleSingUp} className='w-4/5 lg:w-2/3 mx-auto'>
                     <div className="form-control">
                         <label className="label">
@@ -81,6 +101,8 @@ const SingUp = () => {
                 </form>
                 <div className='w-2/3 mx-auto'>
                     <p className='text-center'>Already have an account ? <Link to="/login" className='hover:underline font-semibold'>Login</Link></p>
+                    <p className="text-green-400 mb-3 text-center">{success}</p>
+                    <p className="text-red-500 mb-3 font-semibold text-center">{registerError}</p>
                 </div>
             </div>
         </div>
