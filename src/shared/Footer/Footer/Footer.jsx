@@ -4,7 +4,7 @@ import { FaMapMarkerAlt , FaHeadphonesAlt , FaEnvelopeOpenText} from "react-icon
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-10 bg-[#2e2e2e] text-white py-20">
+      <footer className="footer mt-32 p-10 bg-[#2e2e2e] text-white py-20">
         <div>
           <img  className="w-2/4" src="https://i.ibb.co/d6jRFLd/logo-2.png" alt="" />
           <p>STORE INFORMATION</p>
