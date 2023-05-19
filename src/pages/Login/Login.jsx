@@ -1,13 +1,15 @@
 import React from 'react';
-import { FaGithub, FaGoogle, FaLinkedinIn } from 'react-icons/fa'
+import { FaGithub, FaGoogle } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
+import Lottie from "lottie-react";
+import animation from "../../assets/131930-progerss.json"
 
 
 const Login = () => {
     return (
         <div className='lg:container mx-auto flex flex-col md:flex-row items-center justify-center gap-5 my-20'>
             <div className='md:w-2/4 w-full flex items-center justify-center'>
-                <img src="https://i.ibb.co/6vC1FbY/login2.jpg" alt='' />
+                <Lottie animationData={animation} loop={true}></Lottie>
             </div>
             <div className='w-full md:w-2/4 lg:w-2/5 py-10 border md:mr-2'>
                 <h3 className='text-center text-3xl font-semibold'>Login</h3>

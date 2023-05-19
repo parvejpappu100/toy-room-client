@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Lottie from "lottie-react";
+import animation from "../../assets/115794-e-commerce-page-sign-up.json"
 
 
 const SingUp = () => {
     return (
         <div className='lg:container mx-auto flex flex-col md:flex-row items-center justify-center gap-5 my-20'>
             <div className='md:w-2/4 w-full flex items-center justify-center'>
-                <img src="https://i.ibb.co/6vC1FbY/login2.jpg" alt='' />
+                <Lottie animationData={animation} loop={true}></Lottie>
             </div>
             <div className='w-full md:w-2/4 lg:w-2/5 py-10 border md:mr-2'>
                 <h3 className='text-center text-3xl font-semibold'>Login</h3>
@@ -34,11 +36,8 @@ const SingUp = () => {
                             <span className="label-text text-xl font-medium">Password</span>
                         </label>
                         <input type="password" placeholder="Your Password" name='password' required className="input input-bordered " />
-                        <label className="label">
-                            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                        </label>
                     </div>
-                    <input type="submit" value="Login" className='w-full font-bold btn border-0  hover:bg-[#FFFFFF] hover:text-black hover:border-2  hover:border-black  bg-black text-white py-3 my-5 rounded-md' />
+                    <input type="submit" value="Sing Up" className='w-full font-bold btn border-0  hover:bg-[#FFFFFF] hover:text-black hover:border-2  hover:border-black  bg-black text-white py-3 my-5 rounded-md' />
                 </form>
                 <div className='w-2/3 mx-auto'>
                     <p className='text-center'>Already have an account ? <Link to="/login" className='hover:underline font-semibold'>Login</Link></p>

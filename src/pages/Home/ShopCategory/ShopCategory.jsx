@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import ShowCar from '../ShowCar/ShowCar';
 
 const ShopCategory = () => {
+
+    const [category , setCategory] = useState([]);
+    console.log(category)
+    useEffect( () => {
+        fetch("toy.json")
+        .then(res => res.json())
+        .then(data => setCategory(data))
+    } , [])
+
+    const sportsCars = category.filter( car => car.category == "Sports Car");
+    const regularCars = category.filter( car => car.category == "Regular Car");
+    const trucks = category.filter( car => car.category == "Truck");
+    const policeCars = category.filter( car => car.category == "Mini Police Car");
+
     return (
         <div className='lg:container mx-auto my-10'>
             <Tabs>
@@ -18,16 +33,44 @@ const ShopCategory = () => {
                </div>
 
                 <TabPanel>
-                    <h2>Sports Car Here</h2>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-20'>
+                        {
+                            sportsCars.map(cars => <ShowCar
+                            key={cars.id}
+                            cars = {cars}
+                            ></ShowCar>)
+                        }
+                    </div>
                 </TabPanel>
                 <TabPanel>
-                    <h2>Regular Car Here</h2>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-20'>
+                        {
+                            regularCars.map(cars => <ShowCar
+                            key={cars.id}
+                            cars = {cars}
+                            ></ShowCar>)
+                        }
+                    </div>
                 </TabPanel>
                 <TabPanel>
-                    <h2>Truck Here</h2>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-20'>
+                        {
+                            trucks.map(cars => <ShowCar
+                            key={cars.id}
+                            cars={cars}
+                            ></ShowCar>)
+                        }
+                    </div>
                 </TabPanel>
                 <TabPanel>
-                    <h2>Mini Police Car Here</h2>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-20'>
+                        {
+                            policeCars.map(cars => <ShowCar
+                            key={cars.id}
+                            cars={cars}
+                            ></ShowCar>)
+                        }
+                    </div>
                 </TabPanel>
             </Tabs>
         </div>
