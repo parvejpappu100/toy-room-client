@@ -2,17 +2,35 @@ import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 import ShowMyToys from '../ShowMyToys/ShowMyToys';
 import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 
 const MyToy = () => {
     const { user } = useContext(AuthContext);
     const [toys, setToys] = useState([]);
     const url = `http://localhost:5000/carToys?email=${user.email}`;
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
             .then(data => setToys(data))
     }, [])
+
+    if (toys.length == 0) {
+        Swal.fire({
+            title: "You don't add a toy !",
+            text: "Please add toy first !",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Go to add!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                navigate("/addToy")
+            }
+        })
+    }
 
     const handleDelete = _id => {
         Swal.fire({

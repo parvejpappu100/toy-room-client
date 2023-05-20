@@ -2,8 +2,9 @@ import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css'
 import React from 'react';
 import { FaEdit, FaTrashAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
-const ShowMyToys = ({ toy , handleDelete}) => {
+const ShowMyToys = ({ toy, handleDelete }) => {
     const { _id, seller, name, quantity, price, img, description, rating, category, email } = toy;
     return (
         <div className='my-5 flex flex-col md:flex-row gap-3 p-3  md:items-center justify-around border-2 shadow-sm'>
@@ -14,6 +15,7 @@ const ShowMyToys = ({ toy , handleDelete}) => {
                 <div>
                     <h4 className='text-2xl font-semibold'>{name}</h4>
                     <p>Seller : {seller}</p>
+                    <p>{category}</p>
                     <div className='flex items-center  gap-2 my-1'>
                         <Rating style={{ maxWidth: 100 }} value={rating} readOnly />
                         <p>{rating}</p>
@@ -27,7 +29,7 @@ const ShowMyToys = ({ toy , handleDelete}) => {
                 <p className='text-xl font-bold'>${price}</p>
             </div>
             <div className='flex flex-row md:flex-col gap-10 '>
-                <button className='text-3xl'><FaEdit></FaEdit></button>
+                <Link to={`/updateToy/${_id}`}><button className='text-3xl'><FaEdit></FaEdit></button></Link>
                 <button onClick={() => handleDelete(_id)} className='text-3xl text-red-500'><FaTrashAlt></FaTrashAlt></button>
             </div>
         </div>
