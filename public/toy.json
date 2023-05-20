@@ -1,386 +1,482 @@
 [
   {
-    "id": 1,
+    "_id": 1,
     "category": "Sports Car",
-    "img": "https://i.ibb.co/Xk6RxC8/1.jpg",
+    "img": "https://i.ibb.co/HKcMfXr/4.jpg",
     "name": "Speedy Racer",
     "price": 19.99,
-    "rating": 4.5
+    "rating": 4.5,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 2,
+    "_id": 2,
     "category": "Sports Car",
     "img": "https://i.ibb.co/gT3n7vj/2.jpg",
     "name": "Turbo Blitz",
     "price": 24.99,
-    "rating": 4.2
+    "rating": 4.2,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 3,
+    "_id": 3,
     "category": "Sports Car",
     "img": "https://i.ibb.co/YWrCXvX/3.jpg",
     "name": "Nitro Drifter",
     "price": 14.99,
-    "rating": 4.7
+    "rating": 4.7,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 4,
+    "_id": 4,
     "category": "Sports Car",
-    "img": "https://i.ibb.co/HKcMfXr/4.jpg",
+    "img": "https://i.ibb.co/Xk6RxC8/1.jpg",
     "name": "Super Speedster",
     "price": 29.99,
-    "rating": 4.8
+    "rating": 4.8,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 5,
+    "_id": 5,
     "category": "Sports Car",
     "img": "https://i.ibb.co/gR4mSNG/6.jpg",
     "name": "Racing Rocket",
     "price": 22.99,
-    "rating": 4.6
+    "rating": 4.6,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 6,
+    "_id": 6,
     "category": "Sports Car",
     "img": "https://i.ibb.co/PCBWf2D/7.webp",
     "name": "Velocity Viper",
     "price": 17.99,
-    "rating": 4.4
+    "rating": 4.4,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 7,
+    "_id": 7,
     "category": "Sports Car",
     "img": "https://i.ibb.co/Xxpc3s7/77.jpgg",
     "name": "Flash Fury",
     "price": 26.99,
-    "rating": 4.3
+    "rating": 4.3,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 8,
+    "_id": 8,
     "category": "Sports Car",
     "img": "https://i.ibb.co/MhQkVMv/8.jpg",
     "name": "Sonic Speedster",
     "price": 31.99,
-    "rating": 4.9
+    "rating": 4.9,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 9,
+    "_id": 9,
     "category": "Sports Car",
     "img": "https://i.ibb.co/T8PWL7X/9.webp",
     "name": "Swift Streak",
     "price": 23.99,
-    "rating": 4.7
+    "rating": 4.7,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 10,
+    "_id": 10,
     "category": "Sports Car",
     "img": "https://i.ibb.co/HqHvPRJ/12.jpg",
     "name": "Power Pursuit",
     "price": 27.99,
-    "rating": 4.5
+    "rating": 4.5,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 11,
+    "_id": 11,
     "category": "Sports Car",
     "img": "https://i.ibb.co/YWrCXvX/3.jpg",
     "name": "Turbo Thrasher",
     "price": 21.99,
-    "rating": 4.2
+    "rating": 4.2,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 12,
+    "_id": 12,
     "category": "Sports Car",
     "img": "https://i.ibb.co/Xk6RxC8/1.jpg",
     "name": "Blaze Bolt",
     "price": 19.99,
-    "rating": 4.6
+    "rating": 4.6,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 13,
+    "_id": 13,
     "category": "Regular Car",
     "img": "https://i.ibb.co/q937SzS/13.jpg",
     "name": "Cruiser Classic",
     "price": 18.99,
-    "rating": 4.2
+    "rating": 4.2,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 14,
+    "_id": 14,
     "category": "Regular Car",
     "img": "https://i.ibb.co/yVx7Wc2/14.jpg",
     "name": "Roadster Red",
     "price": 24.99,
-    "rating": 4.5
+    "rating": 4.5,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 15,
+    "_id": 15,
     "category": "Regular Car",
     "img": "https://i.ibb.co/88kH8NB/15.jpg",
     "name": "Urban Explorer",
     "price": 22.99,
-    "rating": 4.8
+    "rating": 4.8,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 16,
+    "_id": 16,
     "category": "Regular Car",
     "img": "https://i.ibb.co/g3BpYsq/16.webp",
     "name": "City Cruiser",
     "price": 19.99,
-    "rating": 4.3
+    "rating": 4.3,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 17,
+    "_id": 17,
     "category": "Regular Car",
     "img": "https://i.ibb.co/3cZXzRP/17.webp",
     "name": "Speedy Sedan",
     "price": 26.99,
-    "rating": 4.6
+    "rating": 4.6,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 18,
+    "_id": 18,
     "category": "Regular Car",
     "img": "https://i.ibb.co/2qbgBHY/18.webp",
     "name": "Highway Hero",
     "price": 23.99,
-    "rating": 4.4
+    "rating": 4.4,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 19,
+    "_id": 19,
     "category": "Regular Car",
     "img": "https://i.ibb.co/0VqgsxZ/19.webp",
     "name": "Speedster Supreme",
     "price": 28.99,
-    "rating": 4.7
+    "rating": 4.7,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 20,
+    "_id": 20,
     "category": "Regular Car",
     "img": "https://i.ibb.co/rGDTZWq/20.jpg",
     "name": "Cruiser Convertible",
     "price": 25.99,
-    "rating": 4.3
+    "rating": 4.3,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 21,
+    "_id": 21,
     "category": "Regular Car",
     "img": "https://i.ibb.co/x7WCxDT/21.jpg",
     "name": "Roadtrip Rider",
     "price": 27.99,
-    "rating": 4.5
+    "rating": 4.5,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 22,
+    "_id": 22,
     "category": "Regular Car",
     "img": "https://i.ibb.co/DfKy8MV/22.jpg",
     "name": "Cityscape Cruiser",
     "price": 21.99,
-    "rating": 4.8
+    "rating": 4.8,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 23,
+    "_id": 23,
     "category": "Regular Car",
     "img": "https://i.ibb.co/NT4LbpB/23.png",
     "name": "Adventure Wagon",
     "price": 29.99,
-    "rating": 4.4
+    "rating": 4.4,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 24,
+    "_id": 24,
     "category": "Regular Car",
     "img": "https://i.ibb.co/kqsL6NK/24.jpg",
     "name": "Classic Commuter",
     "price": 23.99,
-    "rating": 4.6
+    "rating": 4.6,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 25,
+    "_id": 25,
     "category": "Truck",
     "img": "https://i.ibb.co/vd7rmMK/25.jpg",
     "name": "Mighty Hauler",
     "price": 34.99,
-    "rating": 4.7
+    "rating": 4.7,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 26,
+    "_id": 26,
     "category": "Truck",
     "img": "https://i.ibb.co/47XskTj/26.webp",
     "name": "Monster Mover",
     "price": 39.99,
-    "rating": 4.5
+    "rating": 4.5,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 27,
+    "_id": 27,
     "category": "Truck",
     "img": "https://i.ibb.co/H7k6gX2/27.jpg",
     "name": "Off-Road Ranger",
     "price": 32.99,
-    "rating": 4.8
+    "rating": 4.8,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 28,
+    "_id": 28,
     "category": "Truck",
     "img": "https://i.ibb.co/Kj3bVvK/28.png",
     "name": "Tough Transporter",
     "price": 37.99,
-    "rating": 4.4
+    "rating": 4.4,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 29,
+    "_id": 29,
     "category": "Truck",
     "img": "https://i.ibb.co/KDf443D/29.webp",
     "name": "Adventure Hauler",
     "price": 31.99,
-    "rating": 4.6
+    "rating": 4.6,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 30,
+    "_id": 30,
     "category": "Truck",
     "img": "https://i.ibb.co/HntPMVR/30.jpg",
     "name": "Big Rig Explorer",
     "price": 36.99,
-    "rating": 4.3
+    "rating": 4.3,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 31,
+    "_id": 31,
     "category": "Truck",
     "img": "https://i.ibb.co/w0JV9vv/31.png",
     "name": "Mega Hauler",
     "price": 42.99,
-    "rating": 4.5
+    "rating": 4.5,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 32,
+    "_id": 32,
     "category": "Truck",
     "img": "https://i.ibb.co/2WGRjmf/32.jpg",
     "name": "Rugged Racer",
     "price": 38.99,
-    "rating": 4.3
+    "rating": 4.3,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 33,
+    "_id": 33,
     "category": "Truck",
     "img": "https://i.ibb.co/2NVXr9m/33.png",
     "name": "Extreme Expedition",
     "price": 45.99,
-    "rating": 4.6
+    "rating": 4.6,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 34,
+    "_id": 34,
     "category": "Truck",
     "img": "https://i.ibb.co/sys747d/34.jpg",
     "name": "Off-Road Titan",
     "price": 49.99,
-    "rating": 4.8
+    "rating": 4.8,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 35,
+    "_id": 35,
     "category": "Truck",
     "img": "https://i.ibb.co/HnJgFHr/35.webp",
     "name": "Tough Terrain Trekker",
     "price": 36.99,
-    "rating": 4.7
+    "rating": 4.7,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 36,
+    "_id": 36,
     "category": "Truck",
     "img": "https://i.ibb.co/RD8F3VC/36.jpg",
     "name": "Adventure Conqueror",
     "price": 41.99,
-    "rating": 4.4
+    "rating": 4.4,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 37,
+    "_id": 37,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/B6X1Ncx/37.jpg",
     "name": "Patrol Pursuit",
     "price": 14.99,
-    "rating": 4.5
+    "rating": 4.5,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 38,
+    "_id": 38,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/LQfWyFV/38.jpg",
     "name": "Law Enforcer",
     "price": 16.99,
-    "rating": 4.3
+    "rating": 4.3,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 39,
+    "_id": 39,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/5nsjzWw/39.jpg",
     "name": "Cop Cruiser",
     "price": 12.99,
-    "rating": 4.6
+    "rating": 4.6,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 40,
+    "_id": 40,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/P4nQjX9/40.jpg",
     "name": "Speedy Squad",
     "price": 18.99,
-    "rating": 4.8
+    "rating": 4.8,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 41,
+    "_id": 41,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/KqfL7cz/41.webp",
     "name": "Patrol Pro",
     "price": 13.99,
-    "rating": 4.7
+    "rating": 4.7,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 42,
+    "_id": 42,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/C50LL3c/42.jpg",
     "name": "Law Keeper",
     "price": 15.99,
-    "rating": 4.4
+    "rating": 4.4,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 43,
+    "_id": 43,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/5nsjzWw/39.jpg",
     "name": "Siren Speedster",
     "price": 17.99,
-    "rating": 4.6
+    "rating": 4.6,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 44,
+    "_id": 44,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/SdcbFn8/44.jpg",
     "name": "Cop Chaser",
     "price": 14.99,
-    "rating": 4.5
+    "rating": 4.5,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 45,
+    "_id": 45,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/dfRrQjb/45.jpg",
     "name": "Justice Jet",
     "price": 19.99,
-    "rating": 4.7
+    "rating": 4.7,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 46,
+    "_id": 46,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/3R3C3wc/46.jpg",
     "name": "Enforcement Express",
     "price": 16.99,
-    "rating": 4.4
+    "rating": 4.4,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 47,
+    "_id": 47,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/VWjGdsR/47.jpg",
     "name": "Patrol Protector",
     "price": 18.99,
-    "rating": 4.8
+    "rating": 4.8,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   },
   {
-    "id": 48,
+    "_id": 48,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/B4qLYCL/48.jpg",
     "name": "Law Guardian",
     "price": 15.99,
-    "rating": 4.3
+    "rating": 4.3,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "quantity": 33
   }
 ]

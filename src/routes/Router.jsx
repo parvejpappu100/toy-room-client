@@ -3,6 +3,8 @@ import Main from "../layouts/Main";
 import Home from "../pages/Home/Home/Home";
 import Login from "../pages/Login/Login";
 import SingUp from "../pages/SingUp/SingUp";
+import ToyDetails from "../pages/ToyDetails/ToyDetails";
+import PrivateRouter from "./PrivateRouter";
 
 const router = createBrowserRouter([
     {
@@ -20,6 +22,11 @@ const router = createBrowserRouter([
         {
           path: "/singUp",
           element: <SingUp></SingUp>
+        },
+        {
+          path: "/toy-details/:id",
+          element: <PrivateRouter><ToyDetails></ToyDetails></PrivateRouter>,
+          loader: () => fetch('/toy.json')
         }
       ]
     },

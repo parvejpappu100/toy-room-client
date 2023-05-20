@@ -35,7 +35,7 @@ const ShopCategory = () => {
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-20'>
                         {
                             sportsCars.map(cars => <ShowCar
-                            key={cars.id}
+                            key={cars._id}
                             cars = {cars}
                             ></ShowCar>)
                         }
@@ -45,7 +45,7 @@ const ShopCategory = () => {
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-20'>
                         {
                             regularCars.map(cars => <ShowCar
-                            key={cars.id}
+                            key={cars._id}
                             cars = {cars}
                             ></ShowCar>)
                         }
@@ -55,7 +55,7 @@ const ShopCategory = () => {
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-20'>
                         {
                             trucks.map(cars => <ShowCar
-                            key={cars.id}
+                            key={cars._id}
                             cars={cars}
                             ></ShowCar>)
                         }
@@ -65,7 +65,7 @@ const ShopCategory = () => {
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-20'>
                         {
                             policeCars.map(cars => <ShowCar
-                            key={cars.id}
+                            key={cars._id}
                             cars={cars}
                             ></ShowCar>)
                         }

@@ -1,9 +1,10 @@
 import React from 'react';
 import Rating from 'react-rating';
 import { FaRegStar, FaStar } from "react-icons/fa"
+import { Link } from 'react-router-dom';
 
 const ShowCar = ({ cars }) => {
-    const { img, name, price, rating } = cars;
+    const {_id, img, name, price, rating } = cars;
     return (
         <div className=''>
             <div className='relative transition duration-1000 transform hover:-translate-y-2 rounded  shadow hover:shadow-2xl  border'>
@@ -24,7 +25,7 @@ const ShowCar = ({ cars }) => {
                             <p>{rating}</p>
                         </div>
                         <p className='font-bold'>${price}</p>
-                        <button className="btn btn-ghost normal-case text-base bg-none border-2 border-gray-600 mt-1">Details</button>
+                        <Link to={`/toy-details/${_id}`} className="btn btn-ghost normal-case text-base bg-none border-2 border-gray-600 mt-1">Details</Link>
                     </div>
                 </div>
             </div>

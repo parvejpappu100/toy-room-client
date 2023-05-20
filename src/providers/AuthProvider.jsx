@@ -11,7 +11,6 @@ const AuthProvider = ({ children }) => {
 
     const [user, setUser] = useState([]);
     const [loading, setLoading] = useState(true);
-    console.log(user)
 
     const googleSingIn = () => {
         setLoading(true);

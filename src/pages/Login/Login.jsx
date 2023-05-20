@@ -1,12 +1,17 @@
 import React, { useContext, useState } from 'react';
 import { FaGithub, FaGoogle } from 'react-icons/fa'
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Lottie from "lottie-react";
 import animation from "../../assets/131930-progerss.json"
 import { AuthContext } from '../../providers/AuthProvider';
 
 
 const Login = () => {
+
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || "/";
 
     const { googleSingIn, setUser, singIn } = useContext(AuthContext);
 
@@ -18,6 +23,7 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 setUser(user);
+                navigate(from)
             })
             .catch(error => {
 
@@ -35,6 +41,7 @@ const Login = () => {
                 const user = result.user;
                 event.target.reset();
                 setUser(user);
+                navigate(from)
                 setSuccess("Login successfully")
                 setLoginError('');
             })
