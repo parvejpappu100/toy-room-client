@@ -6,6 +6,7 @@ import SingUp from "../pages/SingUp/SingUp";
 import ToyDetails from "../pages/ToyDetails/ToyDetails";
 import PrivateRouter from "./PrivateRouter";
 import AddToy from "../pages/AddToy/AddToy";
+import MyToy from "../pages/MyToy/MyToy";
 
 const router = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
         {
           path: "/addToy",
           element: <PrivateRouter><AddToy></AddToy></PrivateRouter>
+        },
+        {
+          path: "/myToy",
+          element: <PrivateRouter><MyToy></MyToy></PrivateRouter>
         }
       ]
     },

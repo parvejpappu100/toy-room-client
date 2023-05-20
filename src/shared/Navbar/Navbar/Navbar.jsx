@@ -48,7 +48,7 @@ const Navbar = () => {
               }
               {
                 user ? <li>
-                  <Link>My TOY</Link>
+                  <Link to="/myToy">My TOY</Link>
                 </li> : ""
               }
               <li>
@@ -75,7 +75,7 @@ const Navbar = () => {
             }
             {
               user ? <li>
-                <Link>MY TOY</Link>
+                <Link to="/myToy">MY TOY</Link>
               </li> : ""
             }
             <li>

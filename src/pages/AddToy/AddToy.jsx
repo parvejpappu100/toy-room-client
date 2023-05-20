@@ -21,7 +21,8 @@ const AddToy = () => {
         const photo = form.photo.value;
         const description = form.description.value;
         const rating = form.rating.value;
-        const newToy = { name: name, seller: seller, quantity: quantity, price: price, img: photo, description: description, rating: rating, category: selectedCategory }
+        form.reset();
+        const newToy = { name: name, seller: seller, quantity: quantity, price: price, img: photo, description: description, rating: rating, category: selectedCategory , email: user.email}
 
         // * Send data to the server:
         fetch("http://localhost:5000/carToys", {
