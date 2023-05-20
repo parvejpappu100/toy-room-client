@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         },
         {
           path: "/addToy",
-          element: <AddToy></AddToy>
+          element: <PrivateRouter><AddToy></AddToy></PrivateRouter>
         }
       ]
     },

@@ -1,10 +1,11 @@
 import React from 'react';
-import Rating from 'react-rating';
+import { Rating } from '@smastrom/react-rating'
+import '@smastrom/react-rating/style.css'
 import { FaRegStar, FaStar } from "react-icons/fa"
 import { Link } from 'react-router-dom';
 
 const ShowCar = ({ cars }) => {
-    const {_id, img, name, price, rating } = cars;
+    const { _id, img, name, price, rating } = cars;
     return (
         <div className=''>
             <div className='relative transition duration-1000 transform hover:-translate-y-2 rounded  shadow hover:shadow-2xl  border'>
@@ -14,14 +15,7 @@ const ShowCar = ({ cars }) => {
                     <div>
                         <h4 className='text-xl font-semibold uppercase'>{name}</h4>
                         <div className='flex items-center gap-2 my-1 justify-center'>
-                            <Rating
-                                className='text-yellow-400'
-                                readonly
-                                placeholderRating={rating}
-                                emptySymbol={<FaRegStar></FaRegStar>}
-                                placeholderSymbol={<FaStar></FaStar>}
-                                fullSymbol={<FaStar></FaStar>}
-                            />
+                            <Rating style={{ maxWidth: 100 }} value={rating} readOnly />
                             <p>{rating}</p>
                         </div>
                         <p className='font-bold'>${price}</p>
