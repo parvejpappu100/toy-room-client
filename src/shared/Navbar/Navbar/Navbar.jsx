@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
 import { FaUserCircle } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
 
@@ -10,10 +11,16 @@ const Navbar = () => {
   const handleLogOut = () => {
     logOut()
       .then(result => {
-        alert("Log out successfully");
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Logout successfully !',
+          showConfirmButton: false,
+          timer: 1500
+        })
       })
       .catch(error => {
-        
+
       })
   }
 
@@ -34,12 +41,16 @@ const Navbar = () => {
               <li>
                 <Link>ALL TOYS</Link>
               </li>
-              <li>
-                <Link to="/addToy">ADD TOY</Link>
-              </li>
-              <li>
-                <Link>MY TOY</Link>
-              </li>
+              {
+                user ? <li>
+                  <Link to="/addToy">ADD TOY</Link>
+                </li> : ""
+              }
+              {
+                user ? <li>
+                  <Link>My TOY</Link>
+                </li> : ""
+              }
               <li>
                 <Link>BLOG</Link>
               </li>
@@ -57,12 +68,16 @@ const Navbar = () => {
             <li>
               <Link>ALL TOYS</Link>
             </li>
-            <li>
-              <Link to="/addToy">ADD TOY</Link>
-            </li>
-            <li>
-              <Link>MY TOY</Link>
-            </li>
+            {
+              user ? <li>
+                <Link to="/addToy">ADD TOY</Link>
+              </li> : ""
+            }
+            {
+              user ? <li>
+                <Link>MY TOY</Link>
+              </li> : ""
+            }
             <li>
               <Link>BLOG</Link>
             </li>
