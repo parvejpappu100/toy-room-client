@@ -8,7 +8,7 @@ const ToyDetails = () => {
     const toys = useLoaderData();
 
     const toyDetail = toys.find(toy => toy._id == id);
-    const { category, img, name, price, rating , description , quantity} = toyDetail;
+    const { category, img, name, price, description , quantity} = toyDetail;
 
     return (
         <div className='flex flex-col lg:flex-row p-2 items-center gap-10 lg:container mx-auto my-20'>
@@ -17,6 +17,7 @@ const ToyDetails = () => {
             </div>
             <div>
                 <h3 className='text-3xl uppercase font-semibold'>{name}</h3>
+                <h3 className='text-xl font-semibold'>{category}</h3>
                 <p className='text-xl text-gray-400 my-2'>$ {price}</p>
                 <p className='font-semibold'>{description}</p>
                 <div className='my-5 bg-gray-300 p-5 md:p-10 rounded'>
@@ -30,9 +31,9 @@ const ToyDetails = () => {
                     </div>
                     <div className='flex items-center gap-5 mt-5'>
                         <p className='text-xl font-semibold'>Share : </p>
-                        <a href=""><FaFacebookF className='bg-white h-9 w-10 p-1 shadow-md hover:text-white hover:bg-gray-400 '></FaFacebookF></a>
-                        <a href=""><FaTwitter className='bg-white h-9 w-10 p-1 shadow-md hover:text-white hover:bg-gray-400 '></FaTwitter></a>
-                        <a href=""><FaInstagram className='bg-white h-9 w-10 p-1 shadow-md hover:text-white hover:bg-gray-400 '></FaInstagram></a>
+                        <a href="#"><FaFacebookF className='bg-white h-9 w-10 p-1 shadow-md hover:text-white hover:bg-gray-400 '></FaFacebookF></a>
+                        <a href="#"><FaTwitter className='bg-white h-9 w-10 p-1 shadow-md hover:text-white hover:bg-gray-400 '></FaTwitter></a>
+                        <a href="#"><FaInstagram className='bg-white h-9 w-10 p-1 shadow-md hover:text-white hover:bg-gray-400 '></FaInstagram></a>
                     </div>
                 </div>
             </div>
