@@ -31,9 +31,9 @@ const ToyDetails = () => {
                     </div>
                     <div className='flex items-center gap-5 mt-5'>
                         <p className='text-xl font-semibold'>Share : </p>
-                        <a href="#"><FaFacebookF className='bg-white h-9 w-10 p-1 shadow-md hover:text-white hover:bg-gray-400 '></FaFacebookF></a>
-                        <a href="#"><FaTwitter className='bg-white h-9 w-10 p-1 shadow-md hover:text-white hover:bg-gray-400 '></FaTwitter></a>
-                        <a href="#"><FaInstagram className='bg-white h-9 w-10 p-1 shadow-md hover:text-white hover:bg-gray-400 '></FaInstagram></a>
+                        <a href="#"><FaFacebookF className='bg-white h-9 w-10 p-1 shadow-xl hover:text-white hover:bg-black '></FaFacebookF></a>
+                        <a href="#"><FaTwitter className='bg-white h-9 w-10 p-1 shadow-xl hover:text-white hover:bg-black '></FaTwitter></a>
+                        <a href="#"><FaInstagram className='bg-white h-9 w-10 p-1 shadow-xl hover:text-white hover:bg-black'></FaInstagram></a>
                     </div>
                 </div>
             </div>

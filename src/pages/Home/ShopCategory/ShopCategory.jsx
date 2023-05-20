@@ -7,7 +7,7 @@ const ShopCategory = () => {
 
     const [category , setCategory] = useState([]);
     useEffect( () => {
-        fetch("toy.json")
+        fetch("http://localhost:5000/toys")
         .then(res => res.json())
         .then(data => setCategory(data))
     } , [])

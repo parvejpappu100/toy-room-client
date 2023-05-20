@@ -1,6 +1,5 @@
 [
   {
-    "_id": 1,
     "category": "Sports Car",
     "img": "https://i.ibb.co/HKcMfXr/4.jpg",
     "name": "Speedy Racer",
@@ -10,7 +9,6 @@
     "quantity": 33
   },
   {
-    "_id": 2,
     "category": "Sports Car",
     "img": "https://i.ibb.co/gT3n7vj/2.jpg",
     "name": "Turbo Blitz",
@@ -20,7 +18,6 @@
     "quantity": 33
   },
   {
-    "_id": 3,
     "category": "Sports Car",
     "img": "https://i.ibb.co/YWrCXvX/3.jpg",
     "name": "Nitro Drifter",
@@ -30,7 +27,6 @@
     "quantity": 33
   },
   {
-    "_id": 4,
     "category": "Sports Car",
     "img": "https://i.ibb.co/Xk6RxC8/1.jpg",
     "name": "Super Speedster",
@@ -40,7 +36,6 @@
     "quantity": 33
   },
   {
-    "_id": 5,
     "category": "Sports Car",
     "img": "https://i.ibb.co/gR4mSNG/6.jpg",
     "name": "Racing Rocket",
@@ -50,7 +45,6 @@
     "quantity": 33
   },
   {
-    "_id": 6,
     "category": "Sports Car",
     "img": "https://i.ibb.co/PCBWf2D/7.webp",
     "name": "Velocity Viper",
@@ -60,7 +54,6 @@
     "quantity": 33
   },
   {
-    "_id": 7,
     "category": "Sports Car",
     "img": "https://i.ibb.co/Xxpc3s7/77.jpgg",
     "name": "Flash Fury",
@@ -70,7 +63,6 @@
     "quantity": 33
   },
   {
-    "_id": 8,
     "category": "Sports Car",
     "img": "https://i.ibb.co/MhQkVMv/8.jpg",
     "name": "Sonic Speedster",
@@ -80,7 +72,6 @@
     "quantity": 33
   },
   {
-    "_id": 9,
     "category": "Sports Car",
     "img": "https://i.ibb.co/T8PWL7X/9.webp",
     "name": "Swift Streak",
@@ -90,7 +81,6 @@
     "quantity": 33
   },
   {
-    "_id": 10,
     "category": "Sports Car",
     "img": "https://i.ibb.co/HqHvPRJ/12.jpg",
     "name": "Power Pursuit",
@@ -100,7 +90,6 @@
     "quantity": 33
   },
   {
-    "_id": 11,
     "category": "Sports Car",
     "img": "https://i.ibb.co/YWrCXvX/3.jpg",
     "name": "Turbo Thrasher",
@@ -110,7 +99,6 @@
     "quantity": 33
   },
   {
-    "_id": 12,
     "category": "Sports Car",
     "img": "https://i.ibb.co/Xk6RxC8/1.jpg",
     "name": "Blaze Bolt",
@@ -120,7 +108,6 @@
     "quantity": 33
   },
   {
-    "_id": 13,
     "category": "Regular Car",
     "img": "https://i.ibb.co/q937SzS/13.jpg",
     "name": "Cruiser Classic",
@@ -130,7 +117,6 @@
     "quantity": 33
   },
   {
-    "_id": 14,
     "category": "Regular Car",
     "img": "https://i.ibb.co/yVx7Wc2/14.jpg",
     "name": "Roadster Red",
@@ -140,7 +126,6 @@
     "quantity": 33
   },
   {
-    "_id": 15,
     "category": "Regular Car",
     "img": "https://i.ibb.co/88kH8NB/15.jpg",
     "name": "Urban Explorer",
@@ -150,7 +135,6 @@
     "quantity": 33
   },
   {
-    "_id": 16,
     "category": "Regular Car",
     "img": "https://i.ibb.co/g3BpYsq/16.webp",
     "name": "City Cruiser",
@@ -160,7 +144,6 @@
     "quantity": 33
   },
   {
-    "_id": 17,
     "category": "Regular Car",
     "img": "https://i.ibb.co/3cZXzRP/17.webp",
     "name": "Speedy Sedan",
@@ -170,7 +153,6 @@
     "quantity": 33
   },
   {
-    "_id": 18,
     "category": "Regular Car",
     "img": "https://i.ibb.co/2qbgBHY/18.webp",
     "name": "Highway Hero",
@@ -180,7 +162,6 @@
     "quantity": 33
   },
   {
-    "_id": 19,
     "category": "Regular Car",
     "img": "https://i.ibb.co/0VqgsxZ/19.webp",
     "name": "Speedster Supreme",
@@ -190,7 +171,6 @@
     "quantity": 33
   },
   {
-    "_id": 20,
     "category": "Regular Car",
     "img": "https://i.ibb.co/rGDTZWq/20.jpg",
     "name": "Cruiser Convertible",
@@ -200,7 +180,6 @@
     "quantity": 33
   },
   {
-    "_id": 21,
     "category": "Regular Car",
     "img": "https://i.ibb.co/x7WCxDT/21.jpg",
     "name": "Roadtrip Rider",
@@ -210,7 +189,6 @@
     "quantity": 33
   },
   {
-    "_id": 22,
     "category": "Regular Car",
     "img": "https://i.ibb.co/DfKy8MV/22.jpg",
     "name": "Cityscape Cruiser",
@@ -220,7 +198,6 @@
     "quantity": 33
   },
   {
-    "_id": 23,
     "category": "Regular Car",
     "img": "https://i.ibb.co/NT4LbpB/23.png",
     "name": "Adventure Wagon",
@@ -230,7 +207,6 @@
     "quantity": 33
   },
   {
-    "_id": 24,
     "category": "Regular Car",
     "img": "https://i.ibb.co/kqsL6NK/24.jpg",
     "name": "Classic Commuter",
@@ -240,7 +216,6 @@
     "quantity": 33
   },
   {
-    "_id": 25,
     "category": "Truck",
     "img": "https://i.ibb.co/vd7rmMK/25.jpg",
     "name": "Mighty Hauler",
@@ -250,7 +225,6 @@
     "quantity": 33
   },
   {
-    "_id": 26,
     "category": "Truck",
     "img": "https://i.ibb.co/47XskTj/26.webp",
     "name": "Monster Mover",
@@ -260,7 +234,6 @@
     "quantity": 33
   },
   {
-    "_id": 27,
     "category": "Truck",
     "img": "https://i.ibb.co/H7k6gX2/27.jpg",
     "name": "Off-Road Ranger",
@@ -270,7 +243,6 @@
     "quantity": 33
   },
   {
-    "_id": 28,
     "category": "Truck",
     "img": "https://i.ibb.co/Kj3bVvK/28.png",
     "name": "Tough Transporter",
@@ -280,7 +252,6 @@
     "quantity": 33
   },
   {
-    "_id": 29,
     "category": "Truck",
     "img": "https://i.ibb.co/KDf443D/29.webp",
     "name": "Adventure Hauler",
@@ -290,7 +261,6 @@
     "quantity": 33
   },
   {
-    "_id": 30,
     "category": "Truck",
     "img": "https://i.ibb.co/HntPMVR/30.jpg",
     "name": "Big Rig Explorer",
@@ -300,7 +270,6 @@
     "quantity": 33
   },
   {
-    "_id": 31,
     "category": "Truck",
     "img": "https://i.ibb.co/w0JV9vv/31.png",
     "name": "Mega Hauler",
@@ -310,7 +279,6 @@
     "quantity": 33
   },
   {
-    "_id": 32,
     "category": "Truck",
     "img": "https://i.ibb.co/2WGRjmf/32.jpg",
     "name": "Rugged Racer",
@@ -320,7 +288,6 @@
     "quantity": 33
   },
   {
-    "_id": 33,
     "category": "Truck",
     "img": "https://i.ibb.co/2NVXr9m/33.png",
     "name": "Extreme Expedition",
@@ -330,7 +297,6 @@
     "quantity": 33
   },
   {
-    "_id": 34,
     "category": "Truck",
     "img": "https://i.ibb.co/sys747d/34.jpg",
     "name": "Off-Road Titan",
@@ -340,7 +306,6 @@
     "quantity": 33
   },
   {
-    "_id": 35,
     "category": "Truck",
     "img": "https://i.ibb.co/HnJgFHr/35.webp",
     "name": "Tough Terrain Trekker",
@@ -350,7 +315,6 @@
     "quantity": 33
   },
   {
-    "_id": 36,
     "category": "Truck",
     "img": "https://i.ibb.co/RD8F3VC/36.jpg",
     "name": "Adventure Conqueror",
@@ -360,7 +324,6 @@
     "quantity": 33
   },
   {
-    "_id": 37,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/B6X1Ncx/37.jpg",
     "name": "Patrol Pursuit",
@@ -370,7 +333,6 @@
     "quantity": 33
   },
   {
-    "_id": 38,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/LQfWyFV/38.jpg",
     "name": "Law Enforcer",
@@ -380,7 +342,6 @@
     "quantity": 33
   },
   {
-    "_id": 39,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/5nsjzWw/39.jpg",
     "name": "Cop Cruiser",
@@ -390,7 +351,6 @@
     "quantity": 33
   },
   {
-    "_id": 40,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/P4nQjX9/40.jpg",
     "name": "Speedy Squad",
@@ -400,7 +360,6 @@
     "quantity": 33
   },
   {
-    "_id": 41,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/KqfL7cz/41.webp",
     "name": "Patrol Pro",
@@ -410,7 +369,6 @@
     "quantity": 33
   },
   {
-    "_id": 42,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/C50LL3c/42.jpg",
     "name": "Law Keeper",
@@ -420,7 +378,6 @@
     "quantity": 33
   },
   {
-    "_id": 43,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/5nsjzWw/39.jpg",
     "name": "Siren Speedster",
@@ -430,7 +387,6 @@
     "quantity": 33
   },
   {
-    "_id": 44,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/SdcbFn8/44.jpg",
     "name": "Cop Chaser",
@@ -440,7 +396,6 @@
     "quantity": 33
   },
   {
-    "_id": 45,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/dfRrQjb/45.jpg",
     "name": "Justice Jet",
@@ -450,7 +405,6 @@
     "quantity": 33
   },
   {
-    "_id": 46,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/3R3C3wc/46.jpg",
     "name": "Enforcement Express",
@@ -460,7 +414,6 @@
     "quantity": 33
   },
   {
-    "_id": 47,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/VWjGdsR/47.jpg",
     "name": "Patrol Protector",
@@ -470,7 +423,6 @@
     "quantity": 33
   },
   {
-    "_id": 48,
     "category": "Mini Police Car",
     "img": "https://i.ibb.co/B4qLYCL/48.jpg",
     "name": "Law Guardian",
