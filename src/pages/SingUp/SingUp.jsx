@@ -4,9 +4,11 @@ import Lottie from "lottie-react";
 import animation from "../../assets/115794-e-commerce-page-sign-up.json"
 import { AuthContext } from '../../providers/AuthProvider';
 import { updateProfile } from 'firebase/auth';
+import useTitle from '../../hooks/useTitle';
 
 
 const SingUp = () => {
+    useTitle("Sing Up")
 
     const { createUser, setUser } = useContext(AuthContext);
 

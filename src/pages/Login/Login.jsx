@@ -4,9 +4,11 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Lottie from "lottie-react";
 import animation from "../../assets/131930-progerss.json"
 import { AuthContext } from '../../providers/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 
 
 const Login = () => {
+    useTitle("Login")
 
     const navigate = useNavigate();
     const location = useLocation();

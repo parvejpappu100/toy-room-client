@@ -1,8 +1,10 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
+import useTitle from '../../hooks/useTitle';
 
 const ToyDetails = () => {
+    useTitle("Toy Details")
 
     const { id } = useParams();
     const toys = useLoaderData();

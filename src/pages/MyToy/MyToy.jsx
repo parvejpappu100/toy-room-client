@@ -3,11 +3,13 @@ import { AuthContext } from '../../providers/AuthProvider';
 import ShowMyToys from '../ShowMyToys/ShowMyToys';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
+import useTitle from '../../hooks/useTitle';
 
 const MyToy = () => {
+    useTitle("My Toy")
     const { user } = useContext(AuthContext);
     const [toys, setToys] = useState([]);
-    const url = `http://localhost:5000/carToys?email=${user.email}`;
+    const url = `https://toy-marketplace-server-six-pi.vercel.app/carToys?email=${user.email}`;
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -43,7 +45,7 @@ const MyToy = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/carToys/${_id}`, {
+                fetch(`https://toy-marketplace-server-six-pi.vercel.app/carToys/${_id}`, {
                     method: "DELETE"
                 })
                     .then(res => res.json())

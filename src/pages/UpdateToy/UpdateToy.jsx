@@ -2,8 +2,10 @@ import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 import { useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import useTitle from '../../hooks/useTitle';
 
 const UpdateToy = () => {
+    useTitle("Update Toy")
 
     const toy = useLoaderData();
     const { _id, name, quantity, price, img, description, rating } = toy;
@@ -29,7 +31,7 @@ const UpdateToy = () => {
         form.reset();
         const updatedToy = { name: name, seller: seller, quantity: quantity, price: price, img: photo, description: description, rating: rating, category: selectedCategory }
 
-        fetch(`http://localhost:5000/toys/${_id}`, {
+        fetch(`https://toy-marketplace-server-six-pi.vercel.app/toys/${_id}`, {
             method: "PUT",
             headers: {
                 "content-type": "application/json"

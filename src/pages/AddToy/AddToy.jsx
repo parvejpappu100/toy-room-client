@@ -1,8 +1,11 @@
 import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 import Swal from 'sweetalert2';
+import useTitle from '../../hooks/useTitle';
 
 const AddToy = () => {
+
+    useTitle("Add Toy");
 
     const { user } = useContext(AuthContext);
     const [selectedCategory, setSelectedCategory] = useState('');
@@ -25,7 +28,7 @@ const AddToy = () => {
         const newToy = { name: name, seller: seller, quantity: quantity, price: price, img: photo, description: description, rating: rating, category: selectedCategory , email: user.email}
 
         // * Send data to the server:
-        fetch("http://localhost:5000/carToys", {
+        fetch("https://toy-marketplace-server-six-pi.vercel.app/carToys", {
             method: "POST",
             headers: {
                 "content-type": "application/json"
