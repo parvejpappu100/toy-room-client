@@ -46,7 +46,6 @@ const router = createBrowserRouter([
         {
           path: '/allToy',
           element: <AllToy></AllToy>,
-          loader: () => fetch("https://toy-marketplace-server-six-pi.vercel.app/toys")
         },
         {
           path: "/updateToy/:id",

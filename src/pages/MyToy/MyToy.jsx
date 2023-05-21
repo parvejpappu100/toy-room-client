@@ -10,29 +10,12 @@ const MyToy = () => {
     const { user } = useContext(AuthContext);
     const [toys, setToys] = useState([]);
     const url = `https://toy-marketplace-server-six-pi.vercel.app/carToys?email=${user.email}`;
-    const navigate = useNavigate();
 
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
             .then(data => setToys(data))
     }, [])
-
-    if (toys.length == 0) {
-        Swal.fire({
-            title: "You don't add a toy !",
-            text: "Please add toy first !",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Go to add!'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                navigate("/addToy")
-            }
-        })
-    }
 
     const handleDelete = _id => {
         Swal.fire({
@@ -66,8 +49,9 @@ const MyToy = () => {
 
     return (
         <div className='lg:container mx-auto my-20'>
+            <h5 className='text-3xl font-semibold'>My Toys : {toys.length ? toys.length : "You Don't add any toy"}</h5>
             {
-                toys.map(toy => <ShowMyToys
+                toys.sort((a , b) => a.price - b.price).map(toy => <ShowMyToys
                     key={toy._id}
                     toy={toy}
                     handleDelete={handleDelete}
