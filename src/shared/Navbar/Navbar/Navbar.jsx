@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
 import { FaUserCircle } from "react-icons/fa";
 import Swal from "sweetalert2";
+import ActiveLink from "../../../components/ActiveLink/ActiveLink";
 
 const Navbar = () => {
 
@@ -36,23 +37,23 @@ const Navbar = () => {
             </label>
             <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-black rounded-box w-52 font-semibold">
               <li>
-                <Link to="/">HOME</Link>
+                <ActiveLink to="/">HOME</ActiveLink>
               </li>
               <li>
-                <Link to="/allToy">ALL TOYS</Link>
+                <ActiveLink to="/allToy">ALL TOYS</ActiveLink>
               </li>
               {
                 user ? <li>
-                  <Link to="/addToy">ADD TOY</Link>
+                  <ActiveLink to="/addToy">ADD TOY</ActiveLink>
                 </li> : ""
               }
               {
                 user ? <li>
-                  <Link to="/myToy">My TOY</Link>
+                  <ActiveLink to="/myToy">My TOY</ActiveLink>
                 </li> : ""
               }
               <li>
-                <Link to="/blog">BLOG</Link>
+                <ActiveLink to="/blog">BLOG</ActiveLink>
               </li>
             </ul>
           </div>
@@ -63,23 +64,23 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-semibold">
             <li>
-              <Link>HOME</Link>
+              <ActiveLink to="/">HOME</ActiveLink>
             </li>
             <li>
-              <Link to="/allToy">ALL TOYS</Link>
+              <ActiveLink to="/allToy">ALL TOYS</ActiveLink>
             </li>
             {
               user ? <li>
-                <Link to="/addToy">ADD TOY</Link>
+                <ActiveLink to="/addToy">ADD TOY</ActiveLink>
               </li> : ""
             }
             {
               user ? <li>
-                <Link to="/myToy">MY TOY</Link>
+                <ActiveLink to="/myToy">MY TOY</ActiveLink>
               </li> : ""
             }
             <li>
-              <Link to="/blog">BLOG</Link>
+              <ActiveLink to="/blog">BLOG</ActiveLink>
             </li>
           </ul>
         </div>
