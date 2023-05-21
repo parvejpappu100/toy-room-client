@@ -15,7 +15,7 @@ const AllToy = () => {
 
     return (
         <div>
-            <div className='lg:container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-20'>
+            <div className='lg:container mx-auto  my-10'>
                 {
                     loadedToys.slice(0, showAll ? loadedToys.length : 20).map(toy => <ShowAllToys
                         key={toy._id}
