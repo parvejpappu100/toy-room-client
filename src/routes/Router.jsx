@@ -10,6 +10,7 @@ import MyToy from "../pages/MyToy/MyToy";
 import AllToy from "../pages/AllToy/AllToy";
 import UpdateToy from "../pages/UpdateToy/UpdateToy";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Blogs from "../pages/Blog/Blogs";
 
 const router = createBrowserRouter([
     {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
           path: "/updateToy/:id",
           element: <PrivateRouter><UpdateToy></UpdateToy></PrivateRouter>,
           loader: ({params}) => fetch(`https://toy-marketplace-server-six-pi.vercel.app/toys/${params.id}`)
+        },
+        {
+          path: "/blog",
+          element: <Blogs></Blogs>
         }
       ]
     },

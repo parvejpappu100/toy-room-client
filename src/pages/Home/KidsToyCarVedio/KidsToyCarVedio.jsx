@@ -36,7 +36,7 @@ const KidsToyCarVedio = () => {
             <YouTube videoId={videoId} opts={opts} onEnd={onEnd} onReady={handlePlayerReady} ref={playerRef} />
             <div className='absolute inset-0 bg-black bg-opacity-90  opacity-100 text-white  flex flex-col justify-center items-center text-center'>
                 <h3 className='text-5xl font-bold hover:text-gray-300'>AMAZING CAR</h3>
-                <Link to="/allToy"><button className='bg-black text-white font-bold py-2 my-5 px-4 rounded-none'>SHOP NOW</button></Link>
+                <Link to="/allToy"><button className='bg-black hover:bg-gray-400 text-white font-bold py-2 my-5 px-4 rounded-none'>SHOP NOW</button></Link>
             </div>
         </div>
     );
