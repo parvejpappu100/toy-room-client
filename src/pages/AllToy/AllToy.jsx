@@ -15,7 +15,7 @@ const AllToy = () => {
     const [toys , setToys] = useState([]);
 
     useEffect(() => {
-        fetch(`https://toy-marketplace-server-six-pi.vercel.app/toys?search=${search}`)
+        fetch(`https://toy-marketplace-server-six-pi.vercel.app/searchToys?search=${search}`)
         .then(res => res.json())
         .then(data => setToys(data))
     } , [search]);
@@ -38,7 +38,7 @@ const AllToy = () => {
                     </div>
                 </div>
                 {
-                    toys.slice(0, showAll ? loadedToys.length : 20).map(toy => <ShowAllToys
+                    toys.slice(0, showAll ? toys.length : 20).map(toy => <ShowAllToys
                         key={toy._id}
                         toy={toy}
                     ></ShowAllToys>)
