@@ -1,5 +1,4 @@
 import React from 'react';
-import Lottie from "lottie-react";
 import animation from "../../assets/81122-error-404-page-not-found.json"
 import { useNavigate, useRouteError } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';

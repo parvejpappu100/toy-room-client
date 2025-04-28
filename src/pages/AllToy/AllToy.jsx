@@ -6,7 +6,7 @@ import useTitle from '../../hooks/useTitle';
 const AllToy = () => {
     useTitle("All Toy");
     const searchRef = useRef(null);
-    const [search , setSearch] = useState("");
+    const [search , setSearch] = useState("dsfadsfd");
 
     const handleSearch = () => {
         setSearch(searchRef.current.value);
